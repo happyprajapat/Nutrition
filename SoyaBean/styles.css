@@ -1,0 +1,136 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f4f4f4 0%, #ffffff 100%);
+    color: #333;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: url('https://www.svgrepo.com/show/337925/wave.svg') repeat-x;
+    background-size: 100% 200px;
+    z-index: -1;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+header {
+    background-color: #ff9800;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2, h3, p {
+    margin: 0.5em 0;
+}
+
+.nutrition-values, .health-benefits, .other-products,.allergen-warning {
+    padding: 1em;
+    background-color: white;
+    margin: 1em auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.nutrition-values table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-values th, .nutrition-values td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.nutrition-values th {
+    background-color: #ff9800;
+    color: white;
+}
+
+.disclaimer {
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.health-benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.health-benefits li {
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+
+.allergen-warning {
+    font-size: 1em;
+    color: #d9534f;
+    text-align: center;
+}
+
+.other-products .product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+    margin: 1em;
+}
+
+.product img {
+    width: 100px;
+    height: auto;
+    /* border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1); */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+footer h2{
+    color :#ff9800; 
+}
+
+footer i {
+    margin-right: 8px;
+}
+
+footer p a{
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
